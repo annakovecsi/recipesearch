@@ -1,0 +1,6 @@
+<div class="search-recipe">
+  <div class="search-bar">
+  <input (keyup)="keyUp($event)" [(ngModel)]="searchItem" placeholder="Search for recipe e.g. pizza">
+  <div (click)='search()' class="search-button">Search</div>
+  </div>
+</div>

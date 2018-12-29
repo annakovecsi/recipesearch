@@ -1,0 +1,13 @@
+<div class='ingredients'>
+  <div class="search-bar">
+    <input (keyup)="onKey($event)" [(ngModel)]="ingredient" placeholder="Add ingredients e.g. onions">
+    <div (click)='addIngredient()' class="search-button">Add</div>
+    </div>
+
+    <div class='ingredients-list'>
+    <div class='ingredient' *ngFor="let element of ingredients">
+      {{element}}
+    <span (click)='removeIngredient(element)' class='ingredient-remove fas fa-times'></span>
+    </div>
+    </div>
+</div>

@@ -1,0 +1,12 @@
+<app-navigation [recentSearches]='recentSearches' (searchParamChanged)='searchRecentRecipe($event)'></app-navigation>
+<div class='content'>
+  <div class='search-results-container'>
+    <app-search-recipe (searchRecipe)='searchForRecipe($event)'>
+    </app-search-recipe>
+    <app-results [recipeList]='recipeList'>
+    </app-results>
+  </div>
+
+  <app-ingredients  [ingredients]="ingredients" (ingredientsChanged)='ingredients=$event'>
+  </app-ingredients>
+</div>

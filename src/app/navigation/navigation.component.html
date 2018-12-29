@@ -1,0 +1,8 @@
+<div class="navigation">
+  <div class="recent-searches">
+    <div class="recent-search" *ngFor="let item of recentSearches" (click)="search(item)">
+      {{item.searchItem}}
+    </div>
+  </div>
+</div>
+

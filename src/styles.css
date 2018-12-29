@@ -1,0 +1,50 @@
+html, body, input {
+  font-family: 'Catamaran', sans-serif;
+}
+
+html, body {
+  margin: 0px;
+  padding: 0px;
+  background-size: cover;
+  background-image: url("http://blog.kitchen-supreme.com/wp-content/uploads/2017/02/recipe-4.jpg");
+}
+
+.search-bar {
+  height: 45px;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.2);
+  margin-bottom: 40px;
+}
+
+.search-bar input {
+  font-size: 30px;
+  width: 100%;
+  border-radius: 5px 0px 0px 5px;
+  border: 1px solid grey;
+}
+
+.search-bar .search-button {
+  background-color: orangered;
+  color: white;
+  width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0px 5px 5px 0px;
+  font-weight: bold;
+}
+
+.search-bar .search-button:hover {
+ cursor: pointer;
+opacity:0.7;
+}
+
+.link {
+  color: blue;
+}
+
+.link:hover {
+  cursor: pointer;
+  opacity:0.7;
+}

@@ -1,0 +1,14 @@
+.content {
+  width: 100%;
+display: flex;
+justify-content: center;
+}
+
+.search-results-container {
+  width: 50%;
+  margin-right: 6%;
+}
+
+app-ingredient {
+  width:20%;
+}
