@@ -6,6 +6,19 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
+## Browser
+Unfortunately the api this project uses is only http.
+To allow non https requests (disable same origin policy) run chrome with:
+
+Windows - from run prompt (Win + R)
+chrome.exe --user-data-dir="C:/Chrome dev session" --disable-web-security
+
+OSX
+$ open -a Google\ Chrome --args --disable-web-security --user-data-dir
+
+Linux
+$ google-chrome --disable-web-security
+
 ## Code scaffolding
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
